@@ -9,7 +9,7 @@ This lab focuses on understanding and analyzing the asymptotic behavior of algor
 Suppose $T(n)$ is the worst case running time of an algorithm with input size $n$, and we know that $T(n)$ is $\mathcal{O}(n^3)$ and $\Omega(n^2)$. For each of the following statements, determine whether it must be true, must be false, or could be either true or false. Give a brief justification for each. 
 
 1. $T(n)$ is $\mathcal{O}(n^2)$.
-True or False, as if Theta was n^2 then that would be true but if Theta was n^2.5 it would be false
+True or False, If T(n) = n^2, then it is O(n^2) which is True. However, if T(n) = n^3, then it grows faster than n^2 and is not O(n^2) which is False
 2. $T(n)$ is $\Theta(n^3)$.
 True or false, as Theta can be definined as any value between n^2 and n^3
 3. $T(n)$ is $\Omega(n)$.
@@ -17,7 +17,7 @@ True, as the lower bound can only be equal to or greater than n^2, as that is th
 4. $T(n)$ is $\Theta(n^{1.5})$.
 False, as the range for Theta is between n^2 and n^3, which does not include n^1.5
 5. $T(n)$ is $\mathcal{O}(n)$.
-False, as the upper bound can only be greater than or equal to n^3, so either n^k or 2^n
+False, as we know the lower bound is Omega n^2 which means that the upper bound cannot be anything less than that
 6. $T(n)$ is $\Theta(n^2 \log n)$.
 True or False, as the range for Theta is between n^2 and n^3, which includes n^2 \log n
 
